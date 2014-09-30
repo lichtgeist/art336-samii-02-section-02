@@ -52,7 +52,7 @@ nav, main, footer[role="contentinfo"] {
 
 article h1 {
     color: $color-title;
-    @include fontSize(66px);
+    @include fontSize(50px);
     margin: 48px 0;
     text-transform: capitalize;
 }
@@ -108,7 +108,5 @@ html {
     background-attachment: fixed;
     background-repeat: repeat-y;
     background-position: left;
-
-    
-    
 }
+    
