@@ -4,6 +4,7 @@ Base Rules
 */
 
 body {
+    background-color: #fff;
     @include body-font-regular;
     @include fontSize(18px);
     line-height: 1.4;
@@ -20,4 +21,76 @@ h1, h2, h3{
 img {
     height: auto;
     max-width: 100%;
+}
+
+nav {
+    background-color: #fff;
+    border: 1px solid $background-color;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top: none;
+    padding: 4px 5px 6px 5px;
+    position: fixed;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 6px;
+}
+
+nav, main, footer[role="contentinfo"] {
+    margin: 0 10px;
+}
+
+article h1 {
+    color: $color-title;
+    @include fontSize(66px);
+    margin: 48px 0;
+    text-transform: capitalize;
+}
+
+article p:first-of-type {
+    @include fontSize(28px);
+}
+
+figure {
+    margin: 0;
+}
+
+figcaption {
+    @include fontSize(14px);
+}
+
+article div {
+    color: $color-title;
+    @include fontSize(50px);
+    @include body-font-bold;
+    margin: 30px 0;
+    line-height: 1;
+}
+
+footer[role="complementary"] {
+    border-bottom: 1px #989898 solid;
+    border-top: 1px #989898 solid;
+    color: #989898;
+    margin: 40px 0;
+    padding: 10px 0;
+}
+
+footer[role="complementary"] {
+    @include fontSize(18px);
+}
+
+footer[role="contentinfo"] small {
+    border-top: 1px #989898 solid;
+    //display:block;
+    @include fontSize(14px);
+    //margin-bottom: 20px;
+    padding-bottom:20px;
 }
